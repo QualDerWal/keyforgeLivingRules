@@ -64,6 +64,24 @@
         },
         {
             "paragraph": "**The player taking a turn is referred to as the active player**. The active player is the only player that can perform actions or make decisions; a player does not make any decisions when it is not their turn. Each step is described in the following sections."
+        },
+        {
+            "type": "h3",
+            "title": "STEP 1: FORGE A KEY",
+            "paragraph":"If the active player has enough Æmber to forge a key during this step, they must do so. To forge a key, the active player spends Æmber from the Æmber pool on their identity card, returning it to the common supply. Then, that player flips any one of their key tokens over to its forged side, indicating that the key has been forged.",
+            "uList":[
+                "**The default cost to forge a key is six Æmber.** Some card abilities may increase or decrease this number.",
+                "No more than one key can be forged during this step each turn, even if the active player has enough Æmber to forge multiple keys."
+            ]
+        },
+        {
+            "type": "h3",
+            "title": "STEP 2: CHOOSE A HOUSE",
+            "paragraph":"Each KeyForge deck is composed of three different houses, which are shown on the identity card. During this step, the active player chooses one of those three houses to activate, making it the active house for the remainder of the turn. This active house determines which cards the active player can play, discard from their hand, and use this turn.",
+            "uList":[
+                "*After choosing a house, the active player has the option to take all cards in their archives and add them to their hand. (See “Archives” in the Glossary.)",
+                "If a player controls a card that does not belong to one of the three houses in their deck, they may (if they desire) choose and activate that house during this step instead of one of the three houses in their deck."
+            ]
         }
     ]
 }

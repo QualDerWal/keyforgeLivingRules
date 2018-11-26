@@ -5,8 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="Skeleton-2.0.4\css\skeleton.css">
   <link rel="stylesheet" href="Skeleton-2.0.4\css\normalize.css">
+  <link rel="stylesheet" href="Skeleton-2.0.4\css\skeleton.css">
+  <link rel="stylesheet" href="main.css">
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
   <script src="https://unpkg.com/marked@0.3.6"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
@@ -16,7 +18,7 @@
 <body>
   <div class="container" id="app">
     <section v-for="item in jsonData">
-      <h2>{{item.title}}</h2>
+      <h2 :is="item.type">{{item.title}}</h2>
       <p v-for="listItem in item.paragraph" v-html="$options.filters.markdown(listItem)"></p>
       <ul v-if="item.uList">
         <li v-for="listItem in item.uList"v-html="$options.filters.markdown(listItem)"></li>

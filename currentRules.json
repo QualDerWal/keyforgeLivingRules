@@ -91,7 +91,7 @@
             "paragraph":["Each KeyForge deck is composed of three different houses, which are shown on the identity card. During this step, the active player chooses one of those three houses to activate, making it the active house for the remainder of the turn. This active house determines which cards the active player can play, discard from their hand, and use this turn."
             ],
             "uList":[
-                "*After choosing a house, the active player has the option to take all cards in their archives and add them to their hand. (See “Archives” in the Glossary.)",
+                "After choosing a house, the active player has the option to take all cards in their archives and add them to their hand. (See “Archives” in the Glossary.)",
                 "If a player controls a card that does not belong to one of the three houses in their deck, they may (if they desire) choose and activate that house during this step instead of one of the three houses in their deck."
             ]
         },
@@ -102,7 +102,7 @@
             ],
             "uList":[
                 "**First Turn Rule:** During the first player’s first turn of the game, that player cannot play ordiscard more than one card from their",
-                ".The active player may not play, use, or discard cards of other (nonactive) houses unless specified by a card ability."
+                "The active player may not play, use, or discard cards of other (nonactive) houses unless specified by a card ability."
             ]
         }
     ]

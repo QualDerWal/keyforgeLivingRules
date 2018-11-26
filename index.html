@@ -21,7 +21,7 @@
     <h1 style="font-weight: bold;">Keyforge Living Rules</h1>
     <div style="margin-bottom: 20px;">
       <div v-for="item in jsonData" v-if="item.title">
-        <a class="button" :href="'#' + item.title.split(' ').join('_')">{{ item.title }}</a>
+        <a :class="['button', 'button--' + item.type]" :href="'#' + item.title.split(' ').join('_')">{{ item.title }}</a>
       </div>
     </div>
 

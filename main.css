@@ -24,3 +24,6 @@ strong{
 .button:hover{
     color: rgba(254, 211, 48,1.0)
 }
+.button--h3 {
+    margin-left: 25px;
+}

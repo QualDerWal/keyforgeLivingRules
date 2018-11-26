@@ -17,12 +17,12 @@
   <div class="container" id="app">
     <section v-for="item in jsonData">
       <h2>{{item.title}}</h2>
-      <div v-html="$options.filters.markdown(item.paragraph)"></div>
+      <p v-for="listItem in item.paragraph" v-html="$options.filters.markdown(listItem)"></p>
       <ul v-if="item.uList">
-        <li v-for="listItem in item.uList">{{listItem}}</li>
+        <li v-for="listItem in item.uList"v-html="$options.filters.markdown(listItem)"></li>
       </ul>
       <ol v-if="item.oList">
-        <li v-for="listItem in item.oList">{{listItem}}</li>
+        <li v-for="listItem in item.oList"v-html="$options.filters.markdown(listItem)"></li>
       </ol>
     </section>
 

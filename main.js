@@ -5,8 +5,8 @@ var app = new Vue({
   },
   filters: {
     markdown: function(value) {
-      if (!value || typeof value !== 'string') return "";
-      return marked(value);
+      if (!value || typeof value !== "string") return "";
+      return marked.InlineLexer.output(value, []);
     }
   },
   mounted: function() {

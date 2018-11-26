@@ -83,6 +83,15 @@
                 "*After choosing a house, the active player has the option to take all cards in their archives and add them to their hand. (See “Archives” in the Glossary.)",
                 "If a player controls a card that does not belong to one of the three houses in their deck, they may (if they desire) choose and activate that house during this step instead of one of the three houses in their deck."
             ]
+        },
+        {
+            "type": "h3",
+            "title": "STEP 3: PLAY, DISCARD, AND USE CARDS OF THE CHOSEN HOUSE",
+            "paragraph":"The active player may play or discard any number of cards of the active house from their hand and may use any number of cards of the active house that are in play under their control. Eligible cards may be played, used, or discarded in any order. A card’s house is determined by an icon in the upper-left corner. If the active house corresponds to a card’s icon, that card is eligible to be played, used, or discarded. Rules for playing, discarding, and using cards are described later.",
+            "uList":[
+                "**First Turn Rule:** During the first player’s first turn of the game, that player cannot play ordiscard more than one card from their",
+                ".The active player may not play, use, or discard cards of other (nonactive) houses unless specified by a card ability."
+            ]
         }
     ]
 }

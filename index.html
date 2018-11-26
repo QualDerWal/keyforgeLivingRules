@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="Skeleton-2.0.4\css\skeleton.css">
-    <link rel="stylesheet" href="Skeleton-2.0.4\css\normalize.css">
-    <script src="currentRules.js"></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="Skeleton-2.0.4\css\skeleton.css">
+  <link rel="stylesheet" href="Skeleton-2.0.4\css\normalize.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <title>Document</title>
 </head>
-<body onload = "fillDom()">
-<div class="container">
+
+<body>
+  <div class="container" id="app">
+    <section v-for="item in jsonData">
+      <h2>{{item.title}}</h2>
+      <p>{{item.paragraph}}</p>
+      <ul v-if="item.uList">
+        <li v-for="listItem in item.uList">{{listItem}}</li>
+      </ul>
+      <ol v-if="item.oList">
+        <li v-for="listItem in item.oList">{{listItem}}</li>
+      </ol>
+    </section>
+
+
+
+
   </div>
+  <script src="main.js"></script>
 </body>
+
 </html>

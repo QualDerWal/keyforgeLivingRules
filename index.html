@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="Skeleton-2.0.4\css\skeleton.css">
   <link rel="stylesheet" href="Skeleton-2.0.4\css\normalize.css">
+  <script src="https://unpkg.com/marked@0.3.6"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
   <title>Document</title>
@@ -16,7 +17,7 @@
   <div class="container" id="app">
     <section v-for="item in jsonData">
       <h2>{{item.title}}</h2>
-      <p>{{item.paragraph}}</p>
+      <div v-html="$options.filters.markdown(item.paragraph)"></div>
       <ul v-if="item.uList">
         <li v-for="listItem in item.uList">{{listItem}}</li>
       </ul>

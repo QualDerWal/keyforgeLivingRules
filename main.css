@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: rgba(75, 101, 132,1.0);
     color: rgba(209, 216, 224,1.0);
@@ -13,5 +16,11 @@ h3{
     color: rgba(252, 92, 101,1.0);
 }
 strong{
+    color: rgba(254, 211, 48,1.0)
+}
+.button{
+    color: rgba(209, 216, 224,1.0);
+}
+.button:hover{
     color: rgba(254, 211, 48,1.0)
 }

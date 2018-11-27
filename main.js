@@ -4,22 +4,18 @@ var app = new Vue({
     jsonData: []
   },
   filters: {
-    markdown: function(value) {
+    markdown: function (value) {
       if (!value || typeof value !== "string") return "";
       return marked.InlineLexer.output(value, []);
     }
   },
-  mounted: function() {
+  mounted: function () {
     var self = this;
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.open("GET", "./currentRules.json", true);
-    xmlhttp.onreadystatechange = function() {
-      if (xmlhttp.readyState == 4) {
-        if (xmlhttp.status == 200) {
-          console.log(xmlhttp);
-          self.jsonData = JSON.parse(xmlhttp.responseText).sections;
-          console.log(self.jsonData);
-        }
+    xmlhttp.onreadystatechange = function () {
+      if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+        self.jsonData = JSON.parse(xmlhttp.responseText).sections;
       }
     };
     xmlhttp.send(null);

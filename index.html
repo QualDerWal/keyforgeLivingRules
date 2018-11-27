@@ -21,12 +21,12 @@
     <h1 style="font-weight: bold;">Keyforge Living Rules</h1>
     <div style="margin-bottom: 20px;">
       <div v-for="item in jsonData" v-if="item.title">
-        <a :class="['button', 'button--' + item.type]" :href="'#' + item.title.split(' ').join('_')">{{ item.title.length >= 30 ? item.title.substring(0, 30) + '...' : item.title }}</a>
+        <a :class="['button', 'button--' + item.type]" :href="'#' + item.title | snakeCase">{{ item.title.length >= 30 ? item.title.substring(0, 30) + '...' : item.title }}</a>
       </div>
     </div>
 
     <section v-for="item in jsonData">
-      <h2 v-if="item.title" :is="item.type" :id="item.title.split(' ').join('_')">{{item.title}}</h2>
+      <h2 v-if="item.title" :is="item.type" :id="item.title | snakeCase">{{item.title}}</h2>
       <p v-for="listItem in item.paragraph" v-html="$options.filters.markdown(listItem)"></p>
       <ul v-if="item.uList">
         <li v-for="listItem in item.uList"v-html="$options.filters.markdown(listItem)"></li>

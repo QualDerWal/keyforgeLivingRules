@@ -7,6 +7,9 @@ var app = new Vue({
     markdown: function (value) {
       if (!value || typeof value !== "string") return "";
       return marked.InlineLexer.output(value, []);
+    },
+    snakeCase: function (value) {
+      return value.toLowerCase().split(' ').join('_');
     }
   },
   mounted: function () {

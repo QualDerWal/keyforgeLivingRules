@@ -3,25 +3,29 @@
         {
             "type": "h2",
             "title": "Rules",
-            "paragraph":[ "*VERSION 1.1 - NOVEMBER, 2018* | For more info visit [Fantasy Flight](https://www.fantasyflightgames.com/en/products/keyforge/)"
+            "paragraph": [
+                "*VERSION 1.1 - NOVEMBER, 2018* | All Rules belong to Fantasy Flight Games, for more info visit [Fantasy Flight](https://www.fantasyflightgames.com/en/products/keyforge/)"
             ]
         },
         {
             "type": "h2",
             "title": "KEY CONCEPTS",
-            "paragraph":[ "This section introduces a number of foundational concepts to keep in mind while playing the game."
+            "paragraph": [
+                "This section introduces a number of foundational concepts to keep in mind while playing the game."
             ]
         },
         {
             "type": "h3",
             "title": "THE GOLDEN RULE",
-            "paragraph": ["If the text of a card directly contradicts the text of the rules, the text of the card takes precedence."
+            "paragraph": [
+                "If the text of a card directly contradicts the text of the rules, the text of the card takes precedence."
             ]
         },
         {
             "type": "h3",
             "title": "OBJECTIVE",
-            "paragraph":[ "During the game, players use their cards to collect Æmber. Players use Æmber to forge keys. The game ends immediately when a player forges their third key, and that player wins the game."
+            "paragraph": [
+                "During the game, players use their cards to collect Æmber. Players use Æmber to forge keys. The game ends immediately when a player forges their third key, and that player wins the game."
             ]
         },
         {
@@ -34,15 +38,18 @@
                 "**All creatures and artifacts enter play exhausted.**"
             ]
         },
-        {   "type": "h3",
+        {
+            "type": "h3",
             "title": "RUNNING OUT OF TOKENS OR STATUS CARDS",
-            "paragraph":[ "There is no limit to the number of damage tokens, Æmber tokens, or status cards that can be in the game area at a given time. If there is a shortage of the provided tokens or status cards, other tokens, counters, or coins may be used to track the game state."
+            "paragraph": [
+                "There is no limit to the number of damage tokens, Æmber tokens, or status cards that can be in the game area at a given time. If there is a shortage of the provided tokens or status cards, other tokens, counters, or coins may be used to track the game state."
             ]
         },
         {
             "type": "h3",
             "title": "READY AND EXHAUSTED",
-            "paragraph": ["To set up the game, perform the following steps, in order:"
+            "paragraph": [
+                "To set up the game, perform the following steps, in order:"
             ],
             "oList": [
                 "Place all damage tokens, Æmber tokens, and status cards in a common supply within easy reach of both players.",
@@ -55,13 +62,15 @@
             ]
         },
         {
-
-            "paragraph":[ "**The game is now ready to begin.**"
+            "paragraph": [
+                "**The game is now ready to begin.**"
             ]
         },
-        {   "type": "h2",
+        {
+            "type": "h2",
             "title": "TURN SEQUENCE",
-            "paragraph":[ "The game is played over a series of turns. Players alternate taking turns until one player wins the game. Each turn consists of five steps:"
+            "paragraph": [
+                "The game is played over a series of turns. Players alternate taking turns until one player wins the game. Each turn consists of five steps:"
             ],
             "oList": [
                 "Forge a key.",
@@ -72,15 +81,17 @@
             ]
         },
         {
-            "paragraph":[ "**The player taking a turn is referred to as the active player**. The active player is the only player that can perform actions or make decisions; a player does not make any decisions when it is not their turn. Each step is described in the following sections."
+            "paragraph": [
+                "**The player taking a turn is referred to as the active player**. The active player is the only player that can perform actions or make decisions; a player does not make any decisions when it is not their turn. Each step is described in the following sections."
             ]
         },
         {
             "type": "h3",
             "title": "STEP 1: FORGE A KEY",
-            "paragraph":["If the active player has enough Æmber to forge a key during this step, they must do so. To forge a key, the active player spends Æmber from the Æmber pool on their identity card, returning it to the common supply. Then, that player flips any one of their key tokens over to its forged side, indicating that the key has been forged."
+            "paragraph": [
+                "If the active player has enough Æmber to forge a key during this step, they must do so. To forge a key, the active player spends Æmber from the Æmber pool on their identity card, returning it to the common supply. Then, that player flips any one of their key tokens over to its forged side, indicating that the key has been forged."
             ],
-            "uList":[
+            "uList": [
                 "**The default cost to forge a key is six Æmber.** Some card abilities may increase or decrease this number.",
                 "No more than one key can be forged during this step each turn, even if the active player has enough Æmber to forge multiple keys."
             ]
@@ -88,9 +99,10 @@
         {
             "type": "h3",
             "title": "STEP 2: CHOOSE A HOUSE",
-            "paragraph":["Each KeyForge deck is composed of three different houses, which are shown on the identity card. During this step, the active player chooses one of those three houses to activate, making it the active house for the remainder of the turn. This active house determines which cards the active player can play, discard from their hand, and use this turn."
+            "paragraph": [
+                "Each KeyForge deck is composed of three different houses, which are shown on the identity card. During this step, the active player chooses one of those three houses to activate, making it the active house for the remainder of the turn. This active house determines which cards the active player can play, discard from their hand, and use this turn."
             ],
-            "uList":[
+            "uList": [
                 "After choosing a house, the active player has the option to take all cards in their archives and add them to their hand. (See “Archives” in the Glossary.)",
                 "If a player controls a card that does not belong to one of the three houses in their deck, they may (if they desire) choose and activate that house during this step instead of one of the three houses in their deck."
             ]
@@ -98,11 +110,156 @@
         {
             "type": "h3",
             "title": "STEP 3: PLAY, DISCARD, AND USE CARDS OF THE CHOSEN HOUSE",
-            "paragraph":["The active player may play or discard any number of cards of the active house from their hand and may use any number of cards of the active house that are in play under their control. Eligible cards may be played, used, or discarded in any order. A card’s house is determined by an icon in the upper-left corner. If the active house corresponds to a card’s icon, that card is eligible to be played, used, or discarded. Rules for playing, discarding, and using cards are described later."
+            "paragraph": [
+                "The active player may play or discard any number of cards of the active house from their hand and may use any number of cards of the active house that are in play under their control. Eligible cards may be played, used, or discarded in any order. A card’s house is determined by an icon in the upper-left corner. If the active house corresponds to a card’s icon, that card is eligible to be played, used, or discarded. Rules for playing, discarding, and using cards are described later."
             ],
-            "uList":[
+            "uList": [
                 "**First Turn Rule:** During the first player’s first turn of the game, that player cannot play ordiscard more than one card from their",
                 "The active player may not play, use, or discard cards of other (nonactive) houses unless specified by a card ability."
+            ]
+        },
+        {
+            "type": "h3",
+            "title": "STEP 4: READY CARDS",
+            "paragraph": [
+                "The active player readies each of their exhausted cards."
+            ]
+        },
+        {
+            "type": "h3",
+            "title": "STEP 5: DRAW CARDS",
+            "paragraph": [
+                "The active player draws cards from the top of their deck until they have six cards in their hand. After a player completes this step, their turn ends."
+            ],
+            "uList": [
+                "If the active player has more than six cards in hand, they do not discard down to six.",
+                "If a player needs to draw cards (during this step or at any other time) and cannot because their deck is empty, that player shuffles their discard pile to reset their deck, and then continues to draw.",
+                "When a player’s turn ends, if that player has enough Æmber in their pool to afford a key, the player announces “Check!” so that their opponent knows the forging of a key at the start of that player’s next turn is imminent."
+            ]
+        },
+        {
+            "type": "h2",
+            "title": "PLAYING CARDS",
+            "paragraph": [
+                "The active player is permitted to play any number of cards that belong to the active house during step three of their turn."
+            ]
+        },
+        {
+            "type": "strong",
+            "title": "ÆMBER BONUS",
+            "paragraph": [
+                "Many cards in the game have an Æmber bonus below the house icon. When a card with an Æmber bonus is played, the first thing the active player does is gain that much Æmber. Each time a player gains Æmber (for any reason), the Æmber is placed in that player’s Æmber pool (on their identity card)."
+            ]
+        },
+        {
+            "type": "strong",
+            "title": "PLAY ABILITIES",
+            "paragraph": [
+                "Some cards have a bold “Play:” ability. Such abilities resolve after the card’s Æmber bonus is collected, if it has any, and immediately after the card enters play"
+            ]
+        },
+        {
+            "type": "h2",
+            "title": "CARD TYPES",
+            "paragraph": [
+                "The active player is permitted to play any number of cards that belong to the active house during step three of their turn."
+            ]
+        },
+        {
+            "type": "strong",
+            "title": "ACTION CARDS",
+            "paragraph": [
+                "When an action card is played, the active player resolves the card’s **“Play:”** ability and, after resolving as much of the ability as possible, places the card in their discard pile."
+            ]
+        },
+        {
+            "type": "strong",
+            "title": "ARTIFACTS",
+            "paragraph": [
+                "Artifacts enter play exhausted and are placed in a row in front of the player but behind that player’s battleline, which is explained on the next page. Artifacts remain in play from turn to turn."
+            ]
+        },
+        {
+            "type": "strong",
+            "title": "CREATURES",
+            "paragraph": [
+                "Creatures enter play exhausted and are placed in the front row of the active player’s play area. This row is referred to as the battleline. Creatures remain in play from turn to turn, and they each have power and armor values that they use to resolve fights, which are described later.",
+                "Each time a creature enters play, it must be placed on a flank—at the far left or the far right of its controller’s battleline. Each time a creature leaves play, shift the battleline inward to close the gap."
+            ]
+        },
+        {
+            "type": "strong",
+            "title": "UPGRADES",
+            "paragraph": [
+                "Upgrades enter play attached to (i.e., partially overlapped by) a creature chosen by the player who controls the upgrade. Each upgrade remains in play from turn to turn and modifies the card to which it is attached."
+            ],
+            "uList": [
+                "If the card to which an upgrade is attached leaves play, the upgrade is discarded.",
+                "If an upgrade cannot attach to a card in play, the upgrade cannot enter play."
+            ]
+        },
+        {
+            "type": "h2",
+            "title": "DISCARDING CARDS",
+            "paragraph": [
+                "The active player can discard from their hand any number of cards from the active house during step three of their turn. Cards are discarded one at a time, at any point throughout this step. This lets players remove cards that they do not want to play from their hand, freeing up space to draw more cards at the end of the turn."
+            ]
+        },
+        {
+            "type": "h2",
+            "title": "USING CARDS",
+            "paragraph": [
+                "The active player can use any number of cards from the active house that they have in play during step three of their turn. Depending on a card’s type, the active player is able to do different things when using that card."
+            ]
+        },
+        {
+            "type": "strong",
+            "title": "UPGRADES",
+            "paragraph": [
+                "An upgrade modifies the creature it is attached to and is not used independently of that creature."
+            ]
+        },
+        {
+            "type": "strong",
+            "title": "USING ARTIFACTS",
+            "paragraph": [
+                "There are two types of abilities that enable a player to use an artifact: **“Action:”** abilities and **“Omni:”** abilities."
+            ],
+            "uList": [
+                "When a player uses an artifact, they exhaust the card and then resolve its abilities.",
+                "A player can only resolve an **“Action:”** ability if it is on a card that belongs to the active house.",
+                "A player can resolve an **“Omni:”** ability even if it is on a card that does not belong to the active house.",
+                "Some artifacts require that they be sacrificed as part of the cost of using them. When an artifact is sacrificed, it is placed in its owner’s discard pile. A player must still exhaust such an artifact when using it.",
+                "Artifacts cannot be used to reap or to fight."
+            ]
+        },
+        {
+            "type": "strong",
+            "title": "USING CREATURES",
+            "paragraph": [
+                "When a player uses a creature, that player must exhaust the creature, and the player has the option to reap, fight, or to trigger the creature’s **“Action:”** ability."
+            ]
+        }, 
+        {
+            "type": "sub",
+            "title": "REAP",
+            "paragraph": [
+                "**Any ready creature of the active house may reap.** When a creature is used to reap, its controller gains 1 Æmber for their Æmber pool. Then, all **“Reap:”** abilities the creature has, if it has any, resolve."
+            ]
+        }, 
+        {
+            "type": "sub",
+            "title": "FIGHT",
+            "paragraph": [
+                "**Any ready creature of the active house may fight.** When a creature is used to fight, its controller chooses one eligible creature controlled by the opponent as the target of the attack. Each of the two creatures deals an amount of damage equal to its power (the value to the left of the card’s title) to the other creature. All of this damage is dealt simultaneously. After the fight resolves, if the creature that is being used to fight survives, all **“Fight:”** abilities the creature has, if it has any, resolve.",
+                "A creature cannot fight if there is no enemy creature that can be chosen as the target of the attack."
+            ]
+        },
+        {
+            "type": "sub",
+            "title": "ACTION",
+            "paragraph": [
+                "**Any ready creature of the active house may trigger its “Action:”** ability, if it has one. When a creature is used to trigger its **“Action:”** ability, the creature exhausts and all **“Action:”** abilities the creature has resolve."
             ]
         }
     ]

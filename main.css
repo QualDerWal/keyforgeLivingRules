@@ -21,12 +21,20 @@ h3 {
 strong {
     color: rgba(254, 211, 48,1.0)
 }
+sub{
+    color: rgba(252, 92, 101,1.0);
+    font-weight: bold;
+    font-size: 1.7rem;
+}
 .button {
     color: rgba(209, 216, 224,1.0);
 }
 .button:hover {
     color: rgba(254, 211, 48,1.0)
 }
-.button--h3 {
+.button--h3, .button--strong {
     margin-left: 25px;
+}
+.button--sub{
+    margin-left: 50px;
 }

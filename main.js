@@ -3,6 +3,11 @@ var app = new Vue({
   data: {
     jsonData: []
   },
+  computed: {
+    tocList: function() {
+      return this.jsonData.filter(item => item.title);
+    }
+  },
   filters: {
     markdown: function (value) {
       if (!value || typeof value !== "string") return "";

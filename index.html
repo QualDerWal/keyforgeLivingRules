@@ -17,7 +17,7 @@
   <div class="container" id="app">
     <h1 class="site-title">Keyforge Living Rules</h1>
     <div class="table-of-contents">
-      <div v-for="item in jsonData" :key="item.id" v-if="item.title">
+      <div v-for="item in tocList" :key="item.id">
         <a :class="['button', 'button--' + item.type]" :href="'#' + item.title | snakeCase">{{ item.title.length >= 30 ? item.title.substring(0, 30) + '...' : item.title }}</a>
       </div>
     </div>

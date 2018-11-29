@@ -1,42 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles\normalize.css" />
+    <link rel="stylesheet" href="styles\skeleton.css" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://unpkg.com/marked@0.3.6"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <title>Keyforge Living Rules</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="Skeleton-2.0.4\css\normalize.css">
-  <link rel="stylesheet" href="Skeleton-2.0.4\css\skeleton.css">
-  <link rel="stylesheet" href="main.css">
-  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
-  <script src="https://unpkg.com/marked@0.3.6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-
-  <title>Document</title>
-</head>
-
-<body>
-  <div class="container" id="app">
-
-    <h1 style="font-weight: bold;">Keyforge Living Rules</h1>
-    <div style="margin-bottom: 20px;">
-      <div v-for="item in jsonData" v-if="item.title">
-        <a :class="['button', 'button--' + item.type]" :href="'#' + item.title.split(' ').join('_')">{{ item.title.length >= 30 ? item.title.substring(0, 30) + '...' : item.title }}</a>
+  <body>
+    <div class="container" id="app">
+      <h1 class="site-title">Keyforge Living Rules</h1>
+      <div class="table-of-contents">
+        <div v-for="item in tocList" :key="item.id">
+          <a
+            :class="['button', 'button--' + item.type]"
+            :href="'#' + item.title | snakeCase"
+          >
+            {{
+              item.title.length >= 30
+                ? item.title.substring(0, 30) + "..."
+                : item.title
+            }}
+          </a>
+        </div>
       </div>
+
+      <section v-for="item in jsonData" :key="item.id">
+        <h2 v-if="item.title" :is="item.type" :id="item.title | snakeCase">
+          {{ item.title }}
+        </h2>
+        <p
+          v-for="listItem in item.paragraph"
+          :key="listItem.id"
+          v-html="$options.filters.markdown(listItem)"
+        ></p>
+        <ul v-if="item.uList">
+          <li
+            v-for="listItem in item.uList"
+            :key="listItem.id"
+            v-html="$options.filters.markdown(listItem)"
+          ></li>
+        </ul>
+        <ol v-if="item.oList">
+          <li
+            v-for="listItem in item.oList"
+            :key="listItem.id"
+            v-html="$options.filters.markdown(listItem)"
+          ></li>
+        </ol>
+      </section>
     </div>
-
-    <section v-for="item in jsonData">
-      <h2 v-if="item.title" :is="item.type" :id="item.title.split(' ').join('_')">{{item.title}}</h2>
-      <p v-for="listItem in item.paragraph" v-html="$options.filters.markdown(listItem)"></p>
-      <ul v-if="item.uList">
-        <li v-for="listItem in item.uList"v-html="$options.filters.markdown(listItem)"></li>
-      </ul>
-      <ol v-if="item.oList">
-        <li v-for="listItem in item.oList"v-html="$options.filters.markdown(listItem)"></li>
-      </ol>
-    </section>
-  </div>
-  <script src="main.js"></script>
-</body>
-
+    <script src="main.js"></script>
+  </body>
 </html>

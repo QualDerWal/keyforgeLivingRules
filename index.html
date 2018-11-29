@@ -17,19 +17,19 @@
   <div class="container" id="app">
     <h1 class="site-title">Keyforge Living Rules</h1>
     <div class="table-of-contents">
-      <div v-for="item in jsonData" v-if="item.title">
+      <div v-for="item in jsonData" :key="item.id" v-if="item.title">
         <a :class="['button', 'button--' + item.type]" :href="'#' + item.title | snakeCase">{{ item.title.length >= 30 ? item.title.substring(0, 30) + '...' : item.title }}</a>
       </div>
     </div>
 
-    <section v-for="item in jsonData">
+    <section v-for="item in jsonData" :key="item.id">
       <h2 v-if="item.title" :is="item.type" :id="item.title | snakeCase">{{item.title}}</h2>
-      <p v-for="listItem in item.paragraph" v-html="$options.filters.markdown(listItem)"></p>
+      <p v-for="listItem in item.paragraph" :key="listItem.id" v-html="$options.filters.markdown(listItem)"></p>
       <ul v-if="item.uList">
-        <li v-for="listItem in item.uList"v-html="$options.filters.markdown(listItem)"></li>
+        <li v-for="listItem in item.uList" :key="listItem.id" v-html="$options.filters.markdown(listItem)"></li>
       </ul>
       <ol v-if="item.oList">
-        <li v-for="listItem in item.oList"v-html="$options.filters.markdown(listItem)"></li>
+        <li v-for="listItem in item.oList" :key="listItem.id" v-html="$options.filters.markdown(listItem)"></li>
       </ol>
     </section>
   </div>
